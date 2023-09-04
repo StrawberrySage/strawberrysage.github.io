@@ -1,40 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>fus10n</title>
+        <script>
+            function copyDiscord(){
+                navigator.clipboard.writeText("fus10n.alt");
+                document.getElementById("discordCopy").innerHTML = "Discord (copied!)";
+            }
+        </script>
     </head>
-    <!--<style>
-        body {
-            width: 100%;
-            height: 1000px;
-            background-image: url("gtfo.png");
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-        }
-    </style>-->
-    <style>
-        img{
-            image-rendering: pixelated;
-        }
-        body {
-            text-align: center;
-        }
-
-        h3{
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        a{
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: blue;
-            text-decoration: none;
-        }
-    </style>
+    <link href="styles/main.css" rel="stylesheet">
     <body>
-        <img src="construction.png" width="300" height="auto">
-        <h3>Links:</h3>
-        <a href="https://www.youtube.com/@fus10ndev">YouTube</a>
-        <!--<br><br>
-        <h3>Projects:</h3>
-        <a href=""></a>-->
+        <section id="about">
+            <img id="port" src="port.png" width="300" height="auto">
+            <h1>fus10n</h1>
+            <p id="pronouns">(she/her)</p>
+        </section>
+        <section id="links">
+            <h2>Links</h2>
+            <a href="https://www.youtube.com/@fus10n-dev"><div class="link">YouTube (Main channel)</div></a>
+            <a href="https://www.youtube.com/@fus20n"><div class="link">YouTube (2nd channel)</div></a>
+            <a href="https://github.com/fus10n-dev"><div class="link">GitHub</div></a>
+            <a href="https://en.pronouns.page/@fus10n"><div class="link">Pronouns.page</div></a>
+            <div class="link" id="discordCopy" onclick="copyDiscord()">Discord (click to copy)</div>
+        </section>
     </body>
 </html>
