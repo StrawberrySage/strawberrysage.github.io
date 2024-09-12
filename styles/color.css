@@ -1,0 +1,9 @@
+/* CSS HEX */
+:root{
+    --text: #fff;
+    --btn-up: #c52233ff;
+    --madder: rgb(177, 0, 27);
+    --btn-hover: rgb(163, 0, 16);
+    --btn-down: rgb(113, 0, 13);
+    --bg-main: #580c1fff;
+}
